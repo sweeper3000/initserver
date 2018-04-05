@@ -3,6 +3,11 @@ A script that sets up a server to my personal liking.
 
 **This script is meant to be run as root on a fresh, new server.**
 
+# Usage
+Download and pass it off to the shell:
+
+```curl -sS https://raw.githubusercontent.com/sweeper3000/initserver/master/initserver.sh | sh```
+
 # Tasks
 - Create new user, give it sudo access
 - Copy ```.ssh``` folder to new user's ```/home``` directory

@@ -6,10 +6,10 @@ read newuser
 
 # create a new user called main, give it sudo access
 adduser $newuser
-usermod -aG sudo main
+usermod -aG sudo $newuser
 
 # copy the root's .ssh folder to the main's home directory
-cp -r /root/.ssh /home/main
+cp -r /root/.ssh /home/$newuser
 
 # cd to main's home folder
 cd /home/$newuser
