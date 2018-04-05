@@ -30,5 +30,5 @@ apt install fail2ban mosh
 
 # add rules to ufw and enable it
 ufw allow 22
-ufw allow 60000:60003
+ufw allow 60000:60003/udp
 ufw enable
