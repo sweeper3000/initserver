@@ -1,5 +1,7 @@
 # initserver
-A script that sets up a server to my personal liking
+A script that sets up a server to my personal liking.
+
+**This script is meant to be run as root on a fresh, new server.**
 
 # Tasks
 - Create new user, give it sudo access
