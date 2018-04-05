@@ -15,8 +15,8 @@ cp -r /root/.ssh /home/$newuser
 cd /home/$newuser
 
 # change ownership of .ssh and contents to main
-chown main .ssh 
-chown main .ssh/authorized_keys
+chown $newuser .ssh 
+chown $newuser .ssh/authorized_keys
 
 # set permissions
 chmod 700 .ssh
