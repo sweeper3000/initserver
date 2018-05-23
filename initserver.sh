@@ -29,7 +29,7 @@ apt update && apt upgrade
 echo "Do you want to install the software listed in this script now? y/n"
 read install
 
-if [ $install == "y" || $install == "Y" ]; then
+if [ $install == "y" ]; then
 	apt install fail2ban mosh
 else
 	echo "skipping..."
