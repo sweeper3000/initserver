@@ -25,8 +25,15 @@ chmod 644 .ssh/authorized_keys
 # check for server updates and install them
 apt update && apt upgrade
 
-# install software
-apt install fail2ban mosh
+# ask to install software
+echo "Do you want to install the software listed in this script now? (answer 1 for yes)"
+read install
+
+if [ $install == 1 ]; then
+	apt install fail2ban mosh
+else
+	echo "skipping..."
+fi
 
 # add rules to ufw and enable it
 ufw allow 22
