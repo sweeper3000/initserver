@@ -26,10 +26,10 @@ chmod 644 .ssh/authorized_keys
 apt update && apt upgrade
 
 # ask to install software
-echo "Do you want to install the software listed in this script now? y/n"
+echo "Do you want to install the software listed in this script now? (answer 1 for yes)"
 read install
 
-if [ $install == "y" ]; then
+if [ $install == 1 ]; then
 	apt install fail2ban mosh
 else
 	echo "skipping..."
