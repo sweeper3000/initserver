@@ -6,7 +6,8 @@ A script that sets up a server to my personal liking.
 # Usage
 Download and pass it off to the shell:
 
-```wget https://raw.githubusercontent.com/sweeper3000/initserver/master/initserver.sh && chmod +x initserver.sh && ./initserver.sh```
+```bash
+wget https://raw.githubusercontent.com/sweeper3000/initserver/master/initserver.sh && chmod +x initserver.sh && ./initserver.sh```
 
 # Tasks
 - Create new user, give it sudo access
