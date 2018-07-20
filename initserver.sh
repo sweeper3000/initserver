@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# VARIABLES
+packages="mosh"
+
 # ask user what username they want
 echo "What username do you want for the new user?"
 read newuser
@@ -26,11 +29,13 @@ chmod 644 .ssh/authorized_keys
 apt update && apt upgrade
 
 # ask to install software
-echo "Do you want to install the software listed in this script now? (answer 1 for yes)"
+echo "Do you want to install the software listed in this script now?"
+echo "Currently the packages that would be installed are $packages"
+echo "answer 1 for yes"
 read install
 
 if [ $install == 1 ]; then
-	apt install fail2ban mosh
+	apt install $packages
 else
 	echo "skipping..."
 fi
