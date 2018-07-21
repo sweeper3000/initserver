@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # VARIABLES
-packages="mosh"
+defaultPackages="mosh"
 
 # ask user what username they want
 echo "What username do you want for the new user?"
@@ -31,11 +31,18 @@ apt update && apt upgrade
 # ask to install software
 echo "Do you want to install the software listed in this script now?"
 echo "Currently the packages that would be installed are $packages"
-echo "answer 1 for yes"
+
+echo "(1) Install packages"
+echo "(2) Add more packages to install"
+echo "(3) Don't install anything"
 read install
 
 if [ $install == 1 ]; then
-	apt install $packages
+	apt install $defaultPackages
+elif [ $install == 2 ]; then
+    echo "Enter the package names, seperated by a space that you want to install"
+    read userPackages
+    apt install $defaultPackages $userPackages
 else
 	echo "skipping..."
 fi
