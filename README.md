@@ -18,6 +18,6 @@ wget https://raw.githubusercontent.com/sweeper3000/initserver/master/initserver.
 - Check for and install server updates
 - Allow ports 22, 60000:60003 through ufw
 - Enable ufw
-- Install fail2ban and mosh
+- Install mosh and give the user the choice to enter more packages to install
 
 This script will be updated as needs evolve.
