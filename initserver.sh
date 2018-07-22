@@ -30,7 +30,7 @@ apt update && apt upgrade
 
 # ask to install software
 echo "Do you want to install the software listed in this script now?"
-echo "Currently the packages that would be installed are $packages"
+echo "Currently the packages that would be installed are $defaultPackages"
 
 echo "(1) Install packages"
 echo "(2) Add more packages to install"
