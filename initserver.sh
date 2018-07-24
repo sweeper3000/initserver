@@ -42,6 +42,8 @@ if [ $install == 1 ]; then
 elif [ $install == 2 ]; then
     echo "Enter the package names, seperated by a space that you want to install"
     read userPackages
+
+     echo "Now the packages that will be installed are $defaultPackages $userPackages"
     apt install $defaultPackages $userPackages
 else
 	echo "skipping..."
