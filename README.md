@@ -7,7 +7,7 @@ A script that sets up a server to my personal liking.
 Download and pass it off to the shell:
 
 ```bash
-wget https://raw.githubusercontent.com/sweeper3000/initserver/master/initserver.sh && chmod +x initserver.sh && ./initserver.sh
+# wget https://raw.githubusercontent.com/sweeper3000/initserver/master/initserver.sh && chmod +x initserver.sh && ./initserver.sh
 ```
 
 # Tasks
