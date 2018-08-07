@@ -49,6 +49,8 @@ else
 	echo "skipping..."
 fi
 
+sudo apt autoremove
+
 # add rules to ufw and enable it
 ufw allow 22
 ufw allow 60000:60003/udp
