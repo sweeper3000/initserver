@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # VARIABLES
-defaultPackages="mosh"
+defaultPackages="mosh slurm"
 
 # ask user what username they want
 echo "What username do you want for the new user?"
